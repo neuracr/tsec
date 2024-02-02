@@ -1,8 +1,10 @@
 {
   "extends": "../../tsconfig-compile.json",
   "compilerOptions": {
+    "module": "NodeNext",
     "types": ["node"],
-    "outDir": "lib/packages/tsec"
+    "outDir": "lib/packages/tsec",
+    "moduleResolution": "nodenext"
   },
   "references": [
     {"path": "./../../common/tsconfig.json"}
