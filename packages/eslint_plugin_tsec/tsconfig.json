@@ -1,6 +1,7 @@
 {
   "extends": "../../tsconfig-compile.json",
   "compilerOptions": {
+    "moduleResolution": "nodenext",
     "types": ["node"],
     "outDir": "lib/packages/eslint_plugin_tsec"
   },

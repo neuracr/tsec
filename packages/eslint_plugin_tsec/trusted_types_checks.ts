@@ -34,7 +34,7 @@ export const trustedTypesChecks: unknown = createRule({
     type: 'problem',
     docs: {
       description: 'Checks Trusted Types compliance',
-      recommended: 'error',
+      recommended: 'strict',
     },
     messages: {},
     schema: [],
@@ -52,7 +52,7 @@ export const trustedTypesChecks: unknown = createRule({
     if (!checker) {
       checker = getConfiguredChecker(
         parserServices.program,
-        ts.createCompilerHost(parserServices.program.getCompilerOptions()),
+        ts.createCompilerHost(parserServices.program.getCompilerOptions() as any),
       ).checker;
     }
 
