@@ -1,11 +1,11 @@
 {
-  "name": "eslint-plugin-tsec",
-  "version": "0.2.8",
+  "name": "eslint-plugin-neuracr-tt",
+  "version": "0.2.8-rc.1",
   "description": "ESLint plugin that checks Trusted Types compatibility.",
   "author": "Google ISE Hardening Team",
   "main": "lib/packages/eslint_plugin_tsec/index.js",
   "scripts": {
-    "build": "yarn tsc -b ./tsconfig.json && yarn symlink-dir ../../common/lib lib/common",
+    "build": "yarn tsc -b ./tsconfig.json && cp -r ../../common/lib lib/common",
     "clean": "yarn rimraf ./lib"
   },
   "dependencies": {
